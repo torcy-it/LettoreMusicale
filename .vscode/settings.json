@@ -10,6 +10,7 @@
         "c:\\java\\javafx-sdk-19\\lib\\javafx.media.jar",
         "c:\\java\\javafx-sdk-19\\lib\\javafx.swing.jar",
         "c:\\java\\javafx-sdk-19\\lib\\javafx.web.jar",
-        "c:\\java\\javafx-sdk-19\\lib\\javafx-swt.jar"
+        "c:\\java\\javafx-sdk-19\\lib\\javafx-swt.jar",
+        "src/database/postgresql-42.5.0.jar"
     ]
 }

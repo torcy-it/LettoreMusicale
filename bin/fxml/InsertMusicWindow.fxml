@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" stylesheets="@../css/StyleSheetSpotifyPezzottoApp.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="homeButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#homeButtonPressed" text="Home" />
+      <ListView fx:id="listViewCanzoniInserite" layoutX="15.0" layoutY="236.0" prefHeight="153.0" prefWidth="570.0" />
+      <Label fx:id="nomeAlbumLabel" layoutX="18.0" layoutY="41.0" prefHeight="48.0" prefWidth="210.0" text="Nome Album " textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="colorAlbumLabel" layoutX="18.0" layoutY="100.0" prefHeight="114.0" prefWidth="138.0" textFill="WHITE" />
+      <Label fx:id="nomeCasaDiscoLabel" layoutX="18.0" layoutY="83.0" prefHeight="18.0" prefWidth="210.0" text="Casa discografica" textFill="WHITE" />
+      <ColorPicker fx:id="choiceColor" layoutX="440.0" layoutY="27.0" />
+      <TextField fx:id="nomeAlbumText" layoutX="423.0" layoutY="59.0" prefHeight="34.0" prefWidth="169.0" />
+      <TextField fx:id="nomeCasaDiscoText" layoutX="425.0" layoutY="103.0" prefHeight="34.0" prefWidth="170.0" />
+      <Button fx:id="checkAlbumButton" layoutX="470.0" layoutY="191.0" mnemonicParsing="false" onAction="#checkAlbumButtonPressed" text="Inserisci Album" />
+      <Label layoutX="330.0" layoutY="31.0" text="Colore Album" textFill="WHITE" />
+      <Label layoutX="332.0" layoutY="67.0" text="Nome Album" textFill="WHITE" />
+      <Label layoutX="305.0" layoutY="111.0" text="Casa Discografica" textFill="WHITE" />
+      <TextField fx:id="nomeCanzoneText" layoutX="112.0" layoutY="411.0" prefHeight="33.0" prefWidth="267.0" />
+      <TextField fx:id="durataSongText" layoutX="476.0" layoutY="419.0" prefHeight="23.0" prefWidth="110.0" />
+      <TextField fx:id="genereCanzone" layoutX="211.0" layoutY="454.0" prefHeight="34.0" prefWidth="162.0" />
+      <Label layoutX="13.0" layoutY="420.0" text="Titolo Canzone" textFill="WHITE" />
+      <Label layoutX="425.0" layoutY="427.0" text="Durata" textFill="WHITE" />
+      <Label layoutX="156.0" layoutY="463.0" text="Genere" textFill="WHITE" />
+      <ChoiceBox fx:id="choiceBoxTipoTraccia" layoutX="475.0" layoutY="466.0" prefHeight="23.0" prefWidth="110.0" />
+      <Label layoutX="395.0" layoutY="470.0" prefHeight="15.0" prefWidth="74.0" text="Tipo Traccia" textFill="WHITE" />
+      <Button fx:id="checkSongButton" layoutX="246.0" layoutY="499.0" mnemonicParsing="false" onAction="#checkSongButtonPressed" text="Inserisci Canzone" />
+      <Button fx:id="insertNewAlbumButton" layoutX="268.0" layoutY="557.0" mnemonicParsing="false" onAction="#insertNewAlbumButtonPressed" text="Concludi" />
+      <DatePicker fx:id="datePickerAlbum" layoutX="432.0" layoutY="147.0" prefHeight="33.0" prefWidth="155.0" />
+      <Label layoutX="300.0" layoutY="154.0" prefHeight="18.0" prefWidth="120.0" text="Data Uscita Album" textFill="WHITE" />
+      <Separator layoutY="223.0" prefHeight="0.0" prefWidth="600.0" />
+      <Separator layoutY="535.0" prefHeight="3.0" prefWidth="600.0" />
+   </children>
+</AnchorPane>
