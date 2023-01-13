@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="600.0" stylesheets="@../css/StyleSheetSpotifyPezzottoApp.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <TextField fx:id="findSongTextField" layoutX="94.0" layoutY="30.0" prefHeight="33.0" prefWidth="452.0" promptText="Cerca Canzone" />
+      <ChoiceBox fx:id="menuUtenteChoiceBox" layoutX="14.0" layoutY="33.0" prefHeight="26.0" prefWidth="68.0" />
+      <Button fx:id="findSongButton" layoutX="551.0" layoutY="33.0" mnemonicParsing="false" onAction="#findSongButtonPressed" prefHeight="26.0" prefWidth="40.0" text="Find" />
+      <AnchorPane layoutX="10.0" layoutY="402.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="114.0" prefWidth="582.0">
+         <children>
+            <Slider fx:id="volumeSlider" layoutX="474.0" layoutY="35.0" prefHeight="14.0" prefWidth="102.0" />
+            <Button fx:id="playButton" layoutX="250.0" layoutY="36.0" mnemonicParsing="false" onAction="#playButtonPressed" prefHeight="26.0" prefWidth="46.0" text="Play" />
+            <Button fx:id="nextSecondButton" layoutX="303.0" layoutY="36.0" mnemonicParsing="false" onAction="#nextSecondButtonPressed" prefHeight="26.0" prefWidth="69.0" text="Next30sec" />
+            <Button fx:id="backSecondButton" layoutX="172.0" layoutY="36.0" mnemonicParsing="false" onAction="#backSecondPressed" prefHeight="26.0" prefWidth="70.0" text="Back30sec" />
+            <Label fx:id="currentDuration" layoutX="134.0" layoutY="75.0" text="0.00" />
+            <Label fx:id="totalDuration" layoutX="386.0" layoutY="74.0" text="0.00" />
+            <Slider fx:id="musicSlider" layoutX="162.0" layoutY="73.0" prefHeight="20.0" prefWidth="224.0" />
+            <Button fx:id="muteButton" layoutX="424.0" layoutY="30.0" mnemonicParsing="false" onAction="#muteButtonPressed" prefHeight="26.0" prefWidth="40.0" text="Mute" />
+            <Label fx:id="labelColorSong" layoutX="1.0" layoutY="8.0" prefHeight="54.0" prefWidth="58.0" text=" " textAlignment="JUSTIFY" />
+            <Hyperlink fx:id="nomeCanzoneLink" layoutY="62.0" onAction="#nomeCanzoneLinkPressed" />
+            <Hyperlink fx:id="nomeArtistaLink" layoutY="82.0" onAction="#nomeArtistaLinkPressed" />
+         </children>
+      </AnchorPane>
+      <HBox layoutX="21.0" layoutY="76.0" prefHeight="106.0" prefWidth="561.0">
+         <children>
+            <ListView fx:id="listViewUser" prefHeight="106.0" prefWidth="562.0" />
+         </children>
+      </HBox>
+      <ListView fx:id="listViewTracce" layoutX="20.0" layoutY="205.0" prefHeight="190.0" prefWidth="562.0" />
+      <Label layoutX="21.0" layoutY="38.0" prefHeight="15.0" prefWidth="40.0" text="Menu" textFill="WHITE" />
+   </children>
+</AnchorPane>

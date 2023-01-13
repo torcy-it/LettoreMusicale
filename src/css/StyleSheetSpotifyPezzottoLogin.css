@@ -1,0 +1,101 @@
+
+@font-face {
+    font-family: "Montserrat SemiBold";
+    src: url("Montserrat-SemiBold.ttf");
+}
+
+* {
+    -primary: #353639;
+    -secondary: #2FBD5A;
+    -fill: #ADADAD;
+    -fx-font-family: "Montserrat SemiBold";
+    font-family :"Montserrat SemiBold";
+    -fx-font-smoothing-type: gray;
+}
+
+.root {
+    -fx-background-color: -primary;
+    background-color: -primary;
+    -fx-background-radius: 15 15 15 15;
+}
+
+.text-field {
+    -fx-background-color: #ffffff;
+    background-color: #ffffff;
+    -fx-background-radius: 20;
+    -fx-text-fill: black;
+    -fx-font-size: 16;
+    font-size: 16;
+    -fx-highlight-fill: -fill;
+}
+
+.button {
+    -fx-font-size: 16;
+    font-size: 16;
+    -fx-text-fill: Black;
+    -fx-background-radius: 20;
+    -fx-background-color: -secondary;
+    background-color: -secondary;
+}
+
+.hyperlink {
+    -fx-cursor: hand;
+    cursor: hand;
+    -fx-font-size: 14;
+    font-size: 14;
+    -fx-text-fill: -fill;
+    -fx-border-color: transparent;
+    border-color: transparent;
+}
+
+
+.tab {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-background-color: -primary;
+    background-color: -primary;
+    -fx-border-color: -primary;
+    border-color: -primary;
+    -fx-border-width: 0px 0px 3px 0px;  
+    border-width: 0px 0px 3px 0px;  
+}
+
+.tab:selected {
+    -fx-border-color: -secondary;
+    border-color: -secondary;
+    -fx-border-width: 0px 0px 2.5px 0px;
+    border-width: 0px 0px 2.5px 0px;
+}
+
+.tab-label {
+    -fx-font-size: 16;
+    font-size: 16;
+    -fx-text-fill: #ffffff;
+}
+
+.tab-header-background {
+    -fx-background-color: transparent;
+    background-color: transparent;
+}
+
+.tab-down-button {
+    -fx-padding: 0;
+    padding: 0;
+}
+
+.tab-down-button .arrow {
+    -fx-padding: 0;
+    padding: 0;
+}
+
+.tab-pane .tab-header-area {
+    -fx-padding: 0 0 0 140;
+    padding: 0 0 0 140;
+}
+
+.text-alredy {
+    -fx-font-size: 14;
+    font-size: 14;
+    -fx-fill: -fill;
+    fill: -fill;
+}

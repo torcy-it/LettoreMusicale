@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="600.0" stylesheets="@../css/StyleSheetSpotifyPezzottoApp.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="homeButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#homeButtonPressed" text="Home" />
+      <Label fx:id="nomeUtenteLabel" layoutX="14.0" layoutY="62.0" prefHeight="62.0" prefWidth="566.0" text="Nome Utente" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="accountIDTextField" layoutX="114.0" layoutY="138.0" />
+      <TextField fx:id="emailTextField" layoutX="114.0" layoutY="180.0" />
+      <TextField fx:id="passwordTextfield" layoutX="114.0" layoutY="227.0" />
+      <TextField fx:id="nomeTextfield" layoutX="90.0" layoutY="300.0" prefHeight="34.0" prefWidth="206.0" />
+      <TextField fx:id="cognomeTextfield" layoutX="90.0" layoutY="340.0" prefHeight="34.0" prefWidth="205.0" />
+      <Label layoutX="38.0" layoutY="142.0" text="AccountID" textFill="WHITE" />
+      <Label layoutX="66.0" layoutY="184.0" text="Email" textFill="WHITE" />
+      <Label layoutX="44.0" layoutY="231.0" text="Password" textFill="WHITE" />
+      <Label layoutX="40.0" layoutY="305.0" text="Nome" textFill="WHITE" />
+      <Label layoutX="16.0" layoutY="350.0" text="Cognome" textFill="WHITE" />
+      <Separator layoutY="120.0" prefHeight="6.0" prefWidth="600.0" />
+      <Separator layoutX="-3.0" layoutY="273.0" prefHeight="6.0" prefWidth="600.0" />
+      <DatePicker fx:id="datePicker" layoutX="414.0" layoutY="296.0" prefHeight="26.0" prefWidth="150.0" />
+      <Label layoutX="310.0" layoutY="305.0" text="Data di Nascita" textFill="WHITE" />
+      <ChoiceBox fx:id="tipoAccountChoiceBox" layoutX="421.0" layoutY="346.0" prefWidth="150.0" />
+      <Label layoutX="321.0" layoutY="350.0" text="Tipo Account" textFill="WHITE" />
+      <Button fx:id="modInfoUtenteButton" layoutX="475.0" layoutY="429.0" mnemonicParsing="false" onAction="#modInfoUtenteButtonPressed" text="modifica info " />
+      <Button fx:id="modIDButton" layoutX="357.0" layoutY="137.0" mnemonicParsing="false" onAction="#modIDButtonPressed" prefHeight="34.0" prefWidth="66.0" text="modifica" />
+      <Button fx:id="modEmailButton" layoutX="357.0" layoutY="179.0" mnemonicParsing="false" onAction="#modEmailButtonPressed" prefHeight="34.0" prefWidth="66.0" text="modifica" />
+      <Button fx:id="modPasswordButton" layoutX="357.0" layoutY="224.0" mnemonicParsing="false" onAction="#modPasswordButtonPressed" prefHeight="34.0" prefWidth="66.0" text="modifica" />
+      <Button fx:id="insertAlbumButton" layoutX="471.0" layoutY="236.0" mnemonicParsing="false" onAction="#insertAlbumButtonPressed" text="Inserisci Album" />
+   </children>
+</AnchorPane>

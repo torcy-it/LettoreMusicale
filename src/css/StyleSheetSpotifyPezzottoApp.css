@@ -1,0 +1,251 @@
+@font-face {
+    font-family: "Montserrat SemiBold";
+    src: url("Montserrat-SemiBold.ttf");
+}
+
+* {
+    -primary: #353639;
+    -secondary: #2FBD5A;
+    -fill: #ADADAD;
+    -fx-font-family: "Montserrat SemiBold";
+    font-family :"Montserrat SemiBold";
+    -fx-font-smoothing-type: gray;
+}
+
+.root {
+    -fx-background-color: -primary;
+    background-color: -primary;
+    -fx-background-radius: 15 15 15 15;
+}
+
+
+.scroll-pane > .viewport{
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-background-color: -primary;
+    background-color: -primary;
+    -fx-border-color: -primary;
+    border-color: -primary;
+    -fx-border-width: 0px 0px 3px 0px;  
+    border-width: 0px 0px 3px 0px;  
+}
+
+.text-field {
+    -fx-background-color: white;
+    background-color: white;
+    -fx-background-radius: 20;
+    -fx-text-fill: black;
+    -fx-font-size: 16;
+    font-size: 16;
+    -fx-highlight-fill: -fill;
+}
+
+
+.choice-box {
+    background-color: -primary;
+    -fx-background-color: -primary;
+    -fx-mark-color: -secondary;
+    -fx-background-radius: 15 15 15 15; 
+    border-color: -secondary;
+    -fx-border-color : -secondary;
+    border-radius: 15 15 15 15;
+    -fx-border-radius : 15 15 15 15;
+}
+
+.color-picker {
+    background-color: -primary;
+    -fx-background-color: -primary;
+    -fx-mark-color: -secondary;
+    -fx-background-radius: 15 15 15 15; 
+    border-color: -secondary;
+    -fx-border-color : -secondary;
+    border-radius: 15 15 15 15;
+    -fx-border-radius : 15 15 15 15;
+
+}
+.color-picker > .label {
+    -fx-text-fill: white;
+}
+
+.choice-box > .label {
+     -fx-text-fill: white; 
+}
+
+.color-picker > .context-menu {
+    background-color: -primary;
+    -fx-background-color: -primary ;
+}
+.choice-box > .context-menu {
+    background-color: -primary;
+    -fx-background-color: -primary ;
+}
+
+.button {
+    -fx-font-size: 10;
+    font-size: 10;
+    -fx-text-fill: black;
+    -fx-background-radius: 20;
+    -fx-background-color: -secondary;
+    background-color: -secondary;
+}
+
+.slider {
+    -fx-font-size: 10;
+    font-size: 10;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 20;
+    -fx-background-color: -primary;
+    background-color: -primary;
+}
+
+.list-view .scroll-bar:vertical .thumb {
+    -fx-background-insets: 0 2 0 0;
+}
+
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-insets: 0 2 0 0;
+}
+ 
+.list-view .scroll-bar:horizontal .thumb {
+    -fx-background-insets: 0 0 2 0;
+}
+.scroll-pane .scroll-bar:horizontal .thumb {
+    -fx-background-insets: 0 0 2 0;
+}
+
+.list-view .scroll-bar .decrement-arrow,
+.list-view .scroll-bar .increment-arrow {
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+}
+
+.scroll-pane .scroll-bar .decrement-arrow,
+.scroll-pane .scroll-bar .increment-arrow {
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+}
+
+.list-view .scroll-bar {
+    background-color :transparent ;
+    -fx-background-color: transparent;
+    -fx-pref-width: 12;
+    -fx-pref-height: 12;
+    padding :2;
+    -fx-padding: 2;
+}
+
+.scroll-pane .scroll-bar {
+    background-color :transparent ;
+    -fx-background-color: transparent;
+    -fx-pref-width: 12;
+    -fx-pref-height: 12;
+    padding :2;
+    -fx-padding: 2;
+}
+
+.list-view .scroll-bar .thumb {
+    background-color :rgba(0, 0, 0, .2)  ;
+    -fx-background-color: rgba(0, 0, 0, .2);
+    -fx-background-radius: 1000;
+    -fx-pref-width: 12;
+    -fx-pref-height: 12;
+}
+
+.scroll-pane .scroll-bar .thumb {
+    background-color :rgba(0, 0, 0, .2)  ;
+    -fx-background-color: rgba(0, 0, 0, .2);
+    -fx-background-radius: 1000;
+    -fx-pref-width: 12;
+    -fx-pref-height: 12;
+}
+
+
+.list-view {
+    background-color: #232323;
+    -fx-background-color: #232323;
+}
+
+.list-view .list-cell:hover {
+    background-color: #434343;
+    -fx-background-color: #434343;
+}
+
+.list-view .list-cell:selected {
+    background-color: #434343;
+    -fx-background-color: #434343;
+}
+
+.list-view .list-cell {
+    background-color: #232323;
+    -fx-background-color: #232323;
+    -fx-text-fill: white;
+    padding : 12;
+    -fx-padding : 12; 
+}
+
+.list-view .label {
+    -fx-text-fill: white;
+}
+
+
+.hyperlink {
+    -fx-cursor: hand;
+    cursor: hand;
+    -fx-font-size: 10;
+    font-size: 10;
+    -fx-text-fill: -fill;
+    -fx-border-color: transparent;
+    border-color: transparent;
+}
+
+
+.tab {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-background-color: -primary;
+    background-color: -primary;
+    -fx-border-color: -primary;
+    border-color: -primary;
+    -fx-border-width: 0px 0px 3px 0px;  
+    border-width: 0px 0px 3px 0px;  
+}
+
+.tab:selected {
+    -fx-border-color: -secondary;
+    border-color: -secondary;
+    -fx-border-width: 0px 0px 2.5px 0px;
+    border-width: 0px 0px 2.5px 0px;
+}
+
+.tab-label {
+    -fx-font-size: 16;
+    font-size: 16;
+    -fx-text-fill: #ffffff;
+}
+
+.tab-header-background {
+    -fx-background-color: transparent;
+    background-color: transparent;
+}
+
+.tab-down-button {
+    -fx-padding: 0;
+    padding: 0;
+}
+
+.tab-down-button .arrow {
+    -fx-padding: 0;
+    padding: 0;
+}
+
+.tab-pane .tab-header-area {
+    -fx-padding: 0 0 0 140;
+    padding: 0 0 0 140;
+}
+
+.text-alredy {
+    -fx-font-size: 14;
+    font-size: 14;
+    -fx-fill: -fill;
+    fill: -fill;
+}
