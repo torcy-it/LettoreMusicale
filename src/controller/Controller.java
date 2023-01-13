@@ -401,7 +401,7 @@ public class Controller implements InterfacciaController{
      */
     public String getOrarioPreferitoByUser (String utenteid ){
 
-        return connectionDAO.getAscoltiDAO().getOrarioPreferitoByUser(utenteid);
+        return connectionDAO.getAscoltiDAO().getOrarioPreferitoByUser(utenteid.toLowerCase());
 
     }   
 

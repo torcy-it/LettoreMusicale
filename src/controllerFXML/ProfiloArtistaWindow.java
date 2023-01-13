@@ -88,7 +88,7 @@ public class ProfiloArtistaWindow implements Initializable {
 
         hideFollowButton ( );
 
-        labelOrarioPrefertio.setText( controller.getOrarioPreferitoByUser(controller.getOrarioPreferitoByUser(controller.getSelectedUtente().getUtenteID())));
+        labelOrarioPrefertio.setText( controller.getOrarioPreferitoByUser(controller.getSelectedUtente().getUtenteID()));
 
         selectedUtenteLabel.setText(controller.getSelectedUtente().getUtenteID());
 

@@ -161,7 +161,7 @@ public class AscoltiDAO {
 
             ResultSet resultSet; 
 
-            PreparedStatement statement = link.prepareStatement(" Select * from orarioConpiuAscolti( ? )"); 
+            PreparedStatement statement = link.prepareStatement(" Select * from orarioConpiuAscolti( LOWER (?) )"); 
             
             statement.setString(1, userid );
 

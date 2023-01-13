@@ -16,7 +16,7 @@ import javafx.scene.control.Alert.AlertType;
 
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
-
+import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 
 import javafx.fxml.FXML;
@@ -106,7 +106,8 @@ public class HomeWindow implements Initializable {
 		
 		menuUtenteChoiceBox.getItems().addAll(choiceBarAccountMenu);
 		menuUtenteChoiceBox.setOnAction(this::getChoiceAccount);
-        
+        currentDuration.setTextFill(Color.WHITE);
+        totalDuration.setTextFill(Color.WHITE);
         setListviewTracce();
         
         setListviewUser();

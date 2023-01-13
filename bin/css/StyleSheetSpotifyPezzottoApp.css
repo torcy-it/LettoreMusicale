@@ -18,7 +18,14 @@
     -fx-background-radius: 15 15 15 15;
 }
 
-
+#currentDuration{
+    -fx-text-fill: white;
+    color : white;
+}
+#totalDuration{
+    -fx-text-fill: white;
+    color : white;
+}
 .scroll-pane > .viewport{
     -fx-focus-color: transparent;
     -fx-faint-focus-color: transparent;

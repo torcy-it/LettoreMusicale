@@ -187,16 +187,16 @@ public class AccountWindow implements Initializable {
     void modInfoUtenteButtonPressed(ActionEvent event) {
 
         
-        if( nomeTextfield == null  || cognomeTextfield == null  || datePicker == null || tipoAccountChoiceBox == null){
+        if( nomeTextfield == null  || cognomeTextfield == null  || datePicker.getValue() == null || tipoAccountChoiceBox.getValue() == null){
             //display allert
-            controller.displayAllert(AlertType.INFORMATION, "meh", "meh null meh");
+            controller.displayAllert(AlertType.INFORMATION, "meh", "ci sono dei campi vuoti, no bene");
             
         }
         else {
 
             if( nomeTextfield.getText().isEmpty() || cognomeTextfield.getText().isEmpty() ){
                 //display allert
-                controller.displayAllert(AlertType.INFORMATION, "meh", "meh empty meh");
+                controller.displayAllert(AlertType.INFORMATION, "meh", "ci sono dei campi vuoti, no bene");
             }
             else{
                 
@@ -217,7 +217,7 @@ public class AccountWindow implements Initializable {
     void modPasswordButtonPressed(ActionEvent event) {
 
         Dialog<Pair<String, String>> dialog = new Dialog<>();
-        dialog.setTitle("TestName");
+        dialog.setTitle("Modifica Password");
     
         // Set the button types.
         ButtonType loginButtonType = new ButtonType("OK", ButtonData.OK_DONE);

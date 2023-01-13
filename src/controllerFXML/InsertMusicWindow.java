@@ -205,9 +205,21 @@ public class InsertMusicWindow implements Initializable {
             controller.displayAllert(AlertType.INFORMATION, "Errore nell'inserimento album", "Non è stato inserito nessun album o l'album inserito è privo di tracce");
 
         }else{
+            
+            if( controller.insertAlbumDB( controller.getSelectedAlbum() )>0 ){
 
-            controller.insertAlbumDB( controller.getSelectedAlbum() );
-            controller.insertTracceDB( listViewCanzoniInserite.getItems());
+                if(controller.insertTracceDB( listViewCanzoniInserite.getItems()) >0){
+
+                    controller.displayAllert(AlertType.INFORMATION, "Album Inserito Correttamente", "Ti rindirizzo alla pagina Home");
+                    interfacciaController.switchToHomeScene((Stage)insertNewAlbumButton.getScene().getWindow(), controller);
+                }else{
+                    controller.displayAllert(AlertType.INFORMATION, "Errore nell'inserimento album", "Errore Nell'inserimento dati database");
+                }
+
+            }else{
+                controller.displayAllert(AlertType.INFORMATION, "Errore nell'inserimento album", "Errore Nell'inserimento dati database");
+            }
+
             
         }
 
