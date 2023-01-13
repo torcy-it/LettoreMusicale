@@ -79,14 +79,14 @@ public class FollowDAO {
 
         try
         {
-            
+            Follow follow = new Follow();
             System.out.println("Processing insert Follow in followers....");
 
             //selected Follow solo i followers
             List<String> followers = selectedFollow.getFollowers();
 
             System.out.println("Scelgo gli utente che non sono stati inseriti in followers....");
-            ridurreListFollowers(followers, selectedFollow.getUtenteID());
+            follow.ridurreListFollowers(followers, selectedFollow.getUtenteID());
 
             if( !followers.isEmpty() ){
 
@@ -130,41 +130,5 @@ public class FollowDAO {
 
     }
 
-    
-    /** 
-     * @param follow
-     * @param utenteID
-     */
-    public void ridurreListFollowers ( List<String> follow, String utenteID ){
-
-        Iterator<String> selectFollowers = follow.iterator();
-
-        List<String> totalSelectedFollowers = getFollowDB(utenteID, 2);
-
-        System.out.println( "FOLLOWERS RIDUZIONE of "+utenteID+"\n\n" );
-
-        while (selectFollowers.hasNext() ) {
-            
-            String selectedUser = selectFollowers.next();
-
-            System.out.println(  "- "+selectedUser  );
-            System.out.println(  );
-            for( String followingString : totalSelectedFollowers ) {
-            
-                if ( selectedUser.compareToIgnoreCase( followingString ) == 0 ){
-                    selectFollowers.remove();
-                }
-
-                System.out.println( "+ "+followingString );
-
-            }
-            
-        }
-
-        for( String f : follow ) {
-
-            System.out.println( "$ "+ f );
-
-        }
-    }
+   
 }
