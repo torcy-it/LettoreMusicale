@@ -65,5 +65,41 @@ public class Follow {
     public String getUtenteID ( ){
         return utenteID;
     }
+        /** 
+     * @param follow
+     * @param utenteID
+     */
+    public void ridurreListFollowers ( List<String> follow, String utenteID ){
+
+        Iterator<String> selectFollowers = follow.iterator();
+
+        List<String> totalSelectedFollowers = getFollowDB(utenteID, 2);
+
+        System.out.println( "FOLLOWERS RIDUZIONE of "+utenteID+"\n\n" );
+
+        while (selectFollowers.hasNext() ) {
+            
+            String selectedUser = selectFollowers.next();
+
+            System.out.println(  "- "+selectedUser  );
+            System.out.println(  );
+            for( String followingString : totalSelectedFollowers ) {
+            
+                if ( selectedUser.compareToIgnoreCase( followingString ) == 0 ){
+                    selectFollowers.remove();
+                }
+
+                System.out.println( "+ "+followingString );
+
+            }
+            
+        }
+
+        for( String f : follow ) {
+
+            System.out.println( "$ "+ f );
+
+        }
+    }
 
 }
