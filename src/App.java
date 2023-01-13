@@ -13,13 +13,13 @@ public class App extends Application {
     * @param args
     */
    public static void main(String[] args) {
-      launch(args); // create a TipCalculator object and call its start method
+      launch(args); // create a App object and call its start method
    }
 
    
    /** 
     * @param primaryStage
-    * @throws Exception
+    * @throws Exception catture le eccezione del loadImplementation
     */
    @Override
    public void start(Stage primaryStage) throws Exception {
