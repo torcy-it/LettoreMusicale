@@ -1,16 +1,15 @@
 {
-    "java.project.sourcePaths": ["src"],
-    "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "c:\\java\\javafx-sdk-19\\lib\\javafx.base.jar",
-        "c:\\java\\javafx-sdk-19\\lib\\javafx.controls.jar",
-        "c:\\java\\javafx-sdk-19\\lib\\javafx.fxml.jar",
-        "c:\\java\\javafx-sdk-19\\lib\\javafx.graphics.jar",
-        "c:\\java\\javafx-sdk-19\\lib\\javafx.media.jar",
-        "c:\\java\\javafx-sdk-19\\lib\\javafx.swing.jar",
-        "c:\\java\\javafx-sdk-19\\lib\\javafx.web.jar",
-        "c:\\java\\javafx-sdk-19\\lib\\javafx-swt.jar",
-        "src/database/postgresql-42.5.0.jar"
-    ]
+        "lib/postgresql-42.5.0.jar",
+        "lib/javafx-sdk-19/lib/javafx.base.jar",
+        "lib/javafx-sdk-19/lib/javafx.controls.jar",
+        "lib/javafx-sdk-19/lib/javafx.fxml.jar",
+        "lib/javafx-sdk-19/lib/javafx.graphics.jar",
+        "lib/javafx-sdk-19/lib/javafx.media.jar",
+        "lib/javafx-sdk-19/lib/javafx.swing.jar",
+        "lib/javafx-sdk-19/lib/javafx.web.jar",
+        "lib/javafx-sdk-19/lib/javafx-swt.jar"
+    ],
+    "java.dependency.packagePresentation": "hierarchical"
 }
